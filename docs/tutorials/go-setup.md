@@ -92,6 +92,10 @@ The ```devcontainer.json``` file defines the configuration for your development 
 }
 ```
 
+!!! note "Golang VS Code Extension"
+    The Go extension for VS Code, developed by Google, enhances Go development with essential features such as syntax highlighting, intelligent code completion, integrated debugging, linting, automatic formatting, and built-in test support. It also simplifies Go module management and provides real-time error detection for a seamless coding experience.
+/go-dev-container
+
 ### Step 2: Reopen the Project in a VSCode Dev Container
 Reopen the project in the container by pressing ```Ctrl+Shift+P``` (or ```Cmd+Shift+P``` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
@@ -128,6 +132,10 @@ go build
 ./go-dev-container
 ```
 After running those commands, you should see your terminal output "Hello COMP423".
+
+!!! abstract "Understanding Different Methods to Execute a Go Program"
+    The `go run` command compiles the code into an executable and immediately runs it, making it convenient for quick testing. Conversely, the `go build` command functions similarly to `gcc` in C, generating an executable file that can be manually executed using `./<executable_name>`. This approach is useful when you want to distribute or repeatedly run a compiled binary.
+
 
 When you run the ```go run``` command, Go first compiles your code into an executable and then immediately executes it. In contrast, the ```go build``` command functions similarly to how ```gcc``` works in C. For example, when you execute ```gcc main.c```, the compiler produces an executable file named after the directory. This file can then be run directly using ```./<directory_name>```.
 
