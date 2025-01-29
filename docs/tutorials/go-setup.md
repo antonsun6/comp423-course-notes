@@ -92,9 +92,9 @@ The ```devcontainer.json``` file defines the configuration for your development 
 }
 ```
 
-!!! note "Golang VS Code Extension"
+!!! question "What is the difference between Golang and Code Extension?"
     The Go extension for VS Code, developed by Google, enhances Go development with essential features such as syntax highlighting, intelligent code completion, integrated debugging, linting, automatic formatting, and built-in test support. It also simplifies Go module management and provides real-time error detection for a seamless coding experience.
-/go-dev-container
+
 
 ### Step 2: Reopen the Project in a VSCode Dev Container
 Reopen the project in the container by pressing ```Ctrl+Shift+P``` (or ```Cmd+Shift+P``` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
